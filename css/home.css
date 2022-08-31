@@ -1,3 +1,10 @@
+/* =================NAV================ */
+nav ul a:nth-child(1) li{
+    color: var(--color-primary);
+}
+.window-scroll ul a:nth-child(1) li {
+    color: var(--color-black);
+}
 /* =================HEADER================ */
 section#header {
     height: 100vh;
@@ -175,7 +182,7 @@ section#creator{
     font-weight: 700;
 }
 .news__header p {
-    color: var(--color-dark);
+    color: var(--color-realBlack);
     margin-top: 2rem;
     font-weight: 300;
     text-align: center;

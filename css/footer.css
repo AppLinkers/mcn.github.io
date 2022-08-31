@@ -1,6 +1,6 @@
 footer {
     background: var(--color-black);
-    padding: 6rem 0 0 0;
+    padding: 4rem 0 0 0;
 }
 .footer__container {
     color: var(--color-white);
@@ -34,7 +34,7 @@ footer {
 }
 .footer-social a {
     color: var(--color-white);
-    margin-right: 0.5rem;
+    margin-right: 1rem;
     font-size: 1.5rem;
     cursor: pointer;
 }

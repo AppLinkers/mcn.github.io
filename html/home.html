@@ -28,41 +28,40 @@
         <div class="container nav__container">
             <a href="home.html"><h4>MCN</h4></a>
             <ul>
-                <a><li>Home</li></a>
-                <a><li>Brand</li></a>
-                <a><li>Creator</li></a>
-                <a><li>Team</li></a>
-                <a><li>Contact</li></a>
-                <button class="btn btn-varient">Login</button>
+                <a href="home.html"><li>Home</li></a>
+                <a href="brand.html"><li>Brands</li></a>
+                <a href="creator.html"><li>Creators</li></a>
+                <a href="team.html"><li>Team</li></a>
+                <a href="contact.html"><li>Contact</li></a>
+                <button class="btn btn-varient" onclick="location.href='login.html';">Login</button>
             </ul>
             <button class="menu-btn" id="menu-btn"><i class="uil uil-bars"></i></button>
         </div>
+        <!-- =========== MENU ========== -->
+        <menu id="menu">
+            <div class="container menu__container">
+                <div class="menu-head">
+                    <h4>MCN</h4>
+                    <i class="uil uil-multiply" id="close"></i>
+                </div>
+                <div class="menu-content">
+                    <a href="home.html"><h2>Home</h2></a>
+                    <a href="brand.html"><h2>Brands</h2></a>
+                    <a href="creator.html"><h2>Creators</h2></a>
+                    <a href="team.html"><h2>Team</h2></a>
+                    <a href="contact.html"><h2>Contact</h2></a>
+                    <button class="btn btn-varient" onclick="location.href='login.html';">Login</button>
+                </div>
+            </div>
+        </menu>
     </nav>
-
-    <!-- =========== MENU ========== -->
-    <menu id="menu">
-        <div class="container menu__container">
-            <div class="menu-head">
-                <h3>MCN</h3>
-                <i class="uil uil-multiply" id="close"></i>
-            </div>
-            <div class="menu-content">
-                <a><h2>Home</h2></a>
-                <a><h2>Brand</h2></a>
-                <a><h2>Creator</h2></a>
-                <a><h2>Team</h2></a>
-                <a><h2>Contact</h2></a>
-                <button class="btn btn-varient">Login</button>
-            </div>
-        </div>
-    </menu>
 
     <!-- =========== HEADER ========== -->
     <section id="header">
         <div class="container header__container">
             <h2>YouTube Trader Center MCN</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa soluta id pariatur vero, nulla velit a tenetur modi nostrum cum temporibus iusto. Quo eius magnam commodi modi hic. Omnis, exercitationem.</p>
-            <button class="btn">Get Started</button>
+            <button class="btn" onclick="location.href='login.html';">Get Started</button>
         </div>
     </section>
 
@@ -107,7 +106,7 @@
         <div class="creator__header">
             <h4>CREATORS</h4>
             <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam maxime sed illo? Vero, beatae iusto?</P>
-            <button class="btn">Learn More</button>
+            <button class="btn" onclick="location.href='creator.html';">Learn More</button>
         </div>
         <div class="creator__item">
             <article>
@@ -235,7 +234,7 @@
             <div class="news__header">
                 <h4>News & Press</h4>
                 <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam maxime sed illo? Vero, beatae iusto?</P>
-                <button class="btn">Learn More</button>
+                <button class="btn" onclick="location.href='brand.html';">Learn More</button>
             </div>
             <div class="news__content">
                 <article class="news">
@@ -302,11 +301,11 @@
             </div>
             <div class="footer__2">
                 <h4>PermaLinks</h4>
-                <a><p>Home</p></a>
-                <a><p>Brand</p></a>
-                <a><p>Creator</p></a>
-                <a><p>Team</p></a>
-                <a><p>Contact</p></a>
+                <a href="home.html"><p>Home</p></a>
+                <a href="brand.html"><p>Brands</p></a>
+                <a href="creator.html"><p>Creators</p></a>
+                <a href="team.html"><p>Team</p></a>
+                <a href="contact.html"><p>Contact</p></a>
             </div>
             <div class="footer__3">
                 <h4>Contact Us</h4>
@@ -322,7 +321,7 @@
         <div class="footer__copyright">
             <small>Copyright &copy; MCB Youtube Trader</small>
         </div>
-    </section>
+    </footer>
 
     <!-- =========== JAVASCRIPT ========== -->
     <script src="../javascript/menu.js"></script>
