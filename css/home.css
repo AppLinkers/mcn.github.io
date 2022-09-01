@@ -63,7 +63,7 @@ section#intro{
 
 
 /* =================ABOUT================ */
-section#intro{
+section#about{
     background: var(--color-white);
 }
 .about__container {

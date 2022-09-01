@@ -1,0 +1,58 @@
+section#login {
+    height: 100vh;
+    background: var(--color-black);
+}
+.login__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.login__box {
+    background: var(--color-white);
+    padding: 3rem 2rem;
+    border-radius: 0.5rem;
+}
+.line {
+    background: var(--color-gray);
+    height: 1px;
+    margin-top: 1.5rem;
+    margin-bottom: 2.5rem;
+}
+.login__box h5 {
+    margin-top: 2rem;
+}
+.login__box input {
+    width: 100%;
+    margin-top: 0.5rem;
+    box-shadow: none;
+}
+.login__box button {
+    width: 100%;
+    margin-top: 2.5rem;
+}
+.login__box button:hover {
+    transform: none;
+}
+.option {
+    display: flex;
+    justify-content: right;
+}
+.option a {
+    display: flex;
+    cursor: pointer;
+}
+
+/* =================MEDIA QEURIES
+(TABLETS)================ */
+
+@media screen and (max-width: 1400px) {
+    .login__container {
+        grid-template-columns: 1fr 2fr 1fr;
+    }
+}
+/* =================MEDIA QEURIES
+(PHONES)================ */
+@media screen and (max-width: 800px) {
+    .login__container {
+        grid-template-columns: 1fr;
+    }
+}
