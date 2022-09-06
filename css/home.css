@@ -209,20 +209,19 @@ section#creator{
     height: 15rem;
 }
 .news__info h3 {
-    color: var(--color-primary);
-    font-weight: 500;
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
-    -webkit-line-clamp: 2;
+    -webkit-line-clamp: 1;
     -webkit-box-orient: vertical;
-    line-height: 1.2;
+    color: var(--color-realBlack);
+    font-weight: 500;
 }
 .news__info h5 {
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
-    -webkit-line-clamp: 3;
+    -webkit-line-clamp: 4;
     -webkit-box-orient: vertical;
     margin-top: 1rem;
 }

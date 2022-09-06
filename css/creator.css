@@ -29,3 +29,27 @@ section#header {
     margin: 1rem 0 0 3rem;
     font-weight: 900;
 }
+
+/* =================MEDIA QEURIES
+(TABLETS)================ */
+@media screen and (max-width: 1024px) {
+    section#header {
+        padding: 0;
+    }
+    .header__container {
+        align-items: center;
+    }
+    .header__container h1 {
+        text-align: center;
+        width: 100%;
+    }
+
+    .header__container h2 {
+        text-align: center;
+        margin: 1rem 0 0 0;
+    }
+
+}
+@media screen and (max-width: 700px) {
+
+}

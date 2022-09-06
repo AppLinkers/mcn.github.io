@@ -1,4 +1,7 @@
 /* =================NAV================ */
+nav {
+    background: var(--color-black);
+}
 nav ul a:nth-child(4) li{
     color: var(--color-primary);
 }
@@ -6,34 +9,84 @@ nav ul a:nth-child(4) li{
     color: var(--color-black);
 }
 
-/* ================= NEWS ================ */
-section#newses {
+/* ================= HEADER ================ */
+section#header {
+    height: 80vh;
     background: var(--color-black);
-    height: 100vh;
+    background-size: cover;
+    padding: 0 10rem;
 }
-.news__header {
+.header__container {
+    height: 100%;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
-.news__header h2 {
+.title.white h2{
+    color: var(--color-white);
+}
+.title.white .real__line {
+    background: var(--color-white);
+}
+
+
+.swiper {
+    width: 100%;
+    height: 100%;
+    margin-top: 20rem;
+}
+.swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.slide__item {
+    background: var(--color-realBlack);
+    width: 80%;
+    height: 80%;
+}
+.slide__img {
+    height: 75%;
+}
+.slide__img img {
+    height: 100%;
+}
+.slide__text {
+    height: 25%;
+    color: var(--color-white);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 3rem;
+}
+.slide__text h3 {
+    font-weight: 700;
+}
+
+
+/* ================= NEWS ================ */
+.title{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: center;
+}
+.title__text h2 {
     color: var(--color-primary);
     font-weight: 900;
 }
-
-.news__main {
-    display: grid;
-    grid-template-columns: 2fr 3fr;
-    gap: 6rem;
-    margin-top: 3rem;
+.title__line {
+    height: 0.5rem;
 }
-.main__left {
-    width: 100%;
+.real__line {
+    height: 100%;
+    width: 80%;
+    float: right;
+    background: var(--color-primary);
 }
-.main__right {
-    color: var(--color-white);
+.sub__title h4 {
+    color: var(--color-dark);
+    margin-top: 1rem;
 }
-
-
 .news__content {
     display: grid;
     grid-template-columns: repeat(4,1fr);
@@ -41,11 +94,10 @@ section#newses {
     margin-top: 6rem;
 }
 .news {
-    border: 1px solid var(--color-white);
-    background: var(--color-white);
+    border: 1px solid var(--color-gray);
 }
 .news:hover {
-    box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.8);
+    box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.3);
     z-index: 1;
     border-color: var(--color-primary);
 }
@@ -59,24 +111,20 @@ section#newses {
     padding: 1.5rem 1rem;
     height: 15rem;
 }
-.news__info p {
-    color: var(--color-gray);
-}
 .news__info h3 {
-    color: var(--color-primary);
-    font-weight: 500;
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
-    -webkit-line-clamp: 2;
+    -webkit-line-clamp: 1;
     -webkit-box-orient: vertical;
-    line-height: 1.2;
+    color: var(--color-realBlack);
+    font-weight: 500;
 }
 .news__info h5 {
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
-    -webkit-line-clamp: 3;
+    -webkit-line-clamp: 4;
     -webkit-box-orient: vertical;
     margin-top: 1rem;
 }
@@ -86,9 +134,29 @@ section#newses {
     justify-content: center;
     align-items: center;
 }
+.show__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6rem 0;
+}
+.show__button button {
+    width: 12rem;
+    font-weight: 700;
+}
+
 
 
 @media screen and (max-width: 1400px) {
+    .title {
+        grid-template-columns: 1fr 3fr;
+    }
+    .slide__img {
+        height: 60%;
+    }
+    .slide__text {
+        height: 40%;
+    }
     .news__content {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -97,12 +165,39 @@ section#newses {
 (TABLETS)================ */
 
 @media screen and (max-width: 1024px) {
-
+    .slide__text {
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+    .slide__text button {
+        margin-top: 1.5rem;
+    }
 }
 
 @media screen and (max-width: 700px) {
-
+    .slide__item {
+        width: 100%;
+        height: 100%;
+    }
+    .slide__img {
+        height: 40%;
+    }
+    .slide__text {
+        height: 60%;
+    }
     .news__content {
         grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+/* =================MEDIA QEURIES
+(PHONES)================ */
+@media screen and (max-width: 600px) {
+    .slide__img {
+        height: 30%;
+    }
+    .slide__text {
+        height: 70%;
     }
 }
