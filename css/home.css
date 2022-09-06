@@ -249,6 +249,9 @@ section#creator{
 (TABLETS)================ */
 
 @media screen and (max-width: 1024px) {
+    section#header {
+        padding: 0;
+    }
     .header__container {
         align-items: center;
     }

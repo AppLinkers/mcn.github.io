@@ -11,6 +11,7 @@ section#header {
     height: 100vh;
     background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(../image/people-2569234.jpg);
     background-size: cover;
+    padding: 0 10rem;
 }
 .header__container {
     height: 100%;
@@ -24,38 +25,57 @@ section#header {
     font-weight: 900;
     margin-top: 0.2rem;
 }
+.header__container h2 {
+    color: var(--color-white);
+    margin: 1rem 0 0 3rem;
+    font-weight: 900;
+}
 
 /* =================LINE================ */
-.line {
+/* .line {
     width: 100%;
     height: 1px;
     background: var(--color-realBlack);
     margin: 6rem 0;
-}
+} */
 
 
 /* =================ABOUT================ */
 section#about{
     background: var(--color-white);
 }
-.about__container {
+.title{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: center;
+}
+.title__text h2 {
+    color: var(--color-primary);
+    font-weight: 900;
+}
+.title__line {
+    height: 0.5rem;
+}
+.real__line {
+    height: 100%;
+    width: 80%;
+    float: right;
+    background: var(--color-primary);
+}
+.about__content {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 3rem;
+    margin-top: 6rem;
 }
-.about__content {
-    display: flex;
-    flex-direction: column;
-}
-.about__content h4 {
-    color: var(--color-primary);
-    margin-bottom: 2rem;
-    font-weight: 700;
+.content__text p {
+    line-height: 2;
+    font-size: 1.2rem;
+    color: var(--color-dark);
 }
 .about__content image {
     height: 100%;
 }
-
 
 /* =================MEMBER================ */
 .member__header {
@@ -109,11 +129,27 @@ section#about{
 /* =================MEDIA QEURIES
 (TABLETS)================ */
 @media screen and (max-width: 1024px) {
+    section#header {
+        padding: 0;
+    }
     .header__container {
         align-items: center;
+        padding: 0;
+    }
+    .header__container h1 {
+        text-align: center;
+        width: 100%;
+    }
+
+    .header__container h2 {
+        text-align: center;
+        margin: 1rem 0 0 0;
     }
     .member__img {
         height: 20rem;
+    }
+    .about__content {
+        grid-template-columns: 1fr;
     }
 }
 @media screen and (max-width: 700px) {
