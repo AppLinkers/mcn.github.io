@@ -9,17 +9,31 @@ nav ul a:nth-child(4) li{
 /* ================= NEWS ================ */
 section#newses {
     background: var(--color-black);
+    height: 100vh;
 }
 .news__header {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
 }
 .news__header h2 {
     color: var(--color-primary);
     font-weight: 900;
 }
+
+.news__main {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    gap: 6rem;
+    margin-top: 3rem;
+}
+.main__left {
+    width: 100%;
+}
+.main__right {
+    color: var(--color-white);
+}
+
+
 .news__content {
     display: grid;
     grid-template-columns: repeat(4,1fr);
@@ -27,7 +41,7 @@ section#newses {
     margin-top: 6rem;
 }
 .news {
-    border: 1px solid var(--color-gray);
+    border: 1px solid var(--color-white);
     background: var(--color-white);
 }
 .news:hover {

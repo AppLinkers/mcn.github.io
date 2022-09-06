@@ -8,8 +8,9 @@ nav ul a:nth-child(1) li{
 /* =================HEADER================ */
 section#header {
     height: 100vh;
-    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(../image/on-air-7064981_1920.jpg);
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(../image/green-5124174.jpg);
     background-size: cover;
+    padding: 0 10rem;
 }
 .header__container {
     height: 100%;
@@ -17,22 +18,20 @@ section#header {
     flex-direction: column;
     justify-content: center;
 }
-.header__container h2 {
+.header__container h1 {
     color: var(--color-primary);
     text-shadow: 3px 3px 6px var(--color-black);
-    font-style: italic;
     font-weight: 900;
 }
-.header__container p {
+.header__container h2 {
     color: var(--color-white);
-    width: 50%;
-    margin-top: 1.5rem;
-    font-size: 1.1rem;
+    margin: 1rem 0 0 3rem;
+    font-weight: 900;
 }
 .header__container button{
-    margin-top: 1.5rem;
+    margin-top: 3rem;
     width: 12rem;
-    font-weight: 500;
+    font-weight: 700;
 }
 
 
@@ -66,19 +65,34 @@ section#intro{
 section#about{
     background: var(--color-white);
 }
-.about__container {
+.title{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: center;
+}
+.title__text h2 {
+    color: var(--color-primary);
+    font-weight: 900;
+}
+.title__line {
+    height: 0.5rem;
+}
+.real__line {
+    height: 100%;
+    width: 80%;
+    float: right;
+    background: var(--color-primary);
+}
+.about__content {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 3rem;
+    margin-top: 6rem;
 }
-.about__content {
-    display: flex;
-    flex-direction: column;
-}
-.about__content h4 {
-    color: var(--color-primary);
-    margin-bottom: 2rem;
-    font-weight: 700;
+.content__text p {
+    line-height: 2;
+    font-size: 1.2rem;
+    color: var(--color-dark);
 }
 .about__content image {
     height: 100%;
@@ -88,29 +102,25 @@ section#about{
 section#creator{
     background: var(--color-black);
 }
-.creator__header {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.creator__header h4 {
-    color: var(--color-primary);
-    font-weight: 700;
-}
-.creator__header p {
+.title.white h2{
     color: var(--color-white);
-    margin-top: 2rem;
-    font-weight: 300;
-    text-align: center;
 }
-.creator__header button {
-    margin-top: 4rem;
+.title.white .real__line {
+    background: var(--color-white);
+}
+.sub__title h4 {
+    margin-top: 1rem;
+    color: var(--color-white);
+}
+.sub__title button {
+    margin-top: 3rem;
+    width: 12rem;
+    font-weight: 700;
 }
 .creator__item {
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    margin-top: 4rem;
+    margin-top: 6rem;
 }
 .creator__item article {
     position: relative;
@@ -171,24 +181,8 @@ section#creator{
 }
 
 /* ================= NEWS ================ */
-.news__header {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.news__header h4 {
-    color: var(--color-primary);
-    font-weight: 700;
-}
-.news__header p {
-    color: var(--color-realBlack);
-    margin-top: 2rem;
-    font-weight: 300;
-    text-align: center;
-}
-.news__header button {
-    margin-top: 4rem;
+.news__container .sub__title h4 {
+    color: var(--color-dark);
 }
 .news__content {
     display: grid;
@@ -213,9 +207,6 @@ section#creator{
 .news__info {
     padding: 1.5rem 1rem;
     height: 15rem;
-}
-.news__info p {
-    color: var(--color-gray);
 }
 .news__info h3 {
     color: var(--color-primary);
@@ -244,6 +235,9 @@ section#creator{
 
 
 @media screen and (max-width: 1400px) {
+    .title {
+        grid-template-columns: 1fr 3fr;
+    }
     .creator__item {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -258,12 +252,16 @@ section#creator{
     .header__container {
         align-items: center;
     }
-    .header__container p {
+    .header__container h1 {
         text-align: center;
         width: 100%;
     }
 
-    .about__container {
+    .header__container h2 {
+        text-align: center;
+        margin: 1rem 0 0 0;
+    }
+    .about__content {
         grid-template-columns: 1fr;
     }
 
