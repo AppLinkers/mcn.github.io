@@ -19,6 +19,11 @@
      <link rel="stylesheet" href="../css/style.css">
      <link rel="stylesheet" href="../css/home.css">
 
+     <!-- Link Swiper's CSS -->
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+
 </head>
 <body>
     <!-- =========== NAVBAR ========== -->
@@ -28,56 +33,43 @@
     <!-- =========== HEADER ========== -->
     <section id="header">
         <div class="container header__container">
-            <h1>TRADE</h1>
-            <h1>CREATE</h1>
-            <h1>WITH YOU</h1>
-            <h2 class="kor">당신과 함께하는</h2>
-            <h2 class="kor">즐거운 트레이딩</h2>
-            <button class="btn btn-varient kor" onclick="location.href='creator.html';">시작하기</button>
-        </div>
-    </section>
 
-    <!-- =========== INTRO ========== -->
-    <!-- <section id="intro">
-        <div class="intro__content">
-            <h4>Assets</h4>
-            <h2>2.5 B+</h2>
-        </div>
-        <div class="intro__content">
-            <h4>News</h4>
-            <h2>100 +</h2>
-        </div>
-        <div class="intro__content">
-            <h4>Youtuber</h4>
-            <h2>20 +</h2>
-        </div>
-        <div class="intro__content">
-            <h4>Coins</h4>
-            <h2>Bitcoin</h2>
-        </div>
-    </section> -->
-
-    <!-- =========== ABOUT ========== -->
-    <section id="about">
-        <div class="container about__container">
-            <div class="title">
-                <div class="title__text">
-                    <h2>ABOUT US</h2>
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="swiper-text">
+                        <h1>TRADE</h1>
+                        <h1>CREATE</h1>
+                        <h1>WITH YOU</h1>
+                        <h2 class="kor">당신과 함께하는</h2>
+                        <h2 class="kor">즐거운 트레이딩</h2>
+                        <button class="btn btn-varient kor" onclick="location.href='creator.html';">시작하기</button>
+                    </div>
+                    <div class="swiper-img">
+                        <img src="../image/trader2.jpg">
+                    </div>
                 </div>
-                <div class="title__line">
-                    <div></div>
-                    <div class="real__line"></div>
+                <div class="swiper-slide">
+                    <div class="swiper-text">
+                        <h1>TRADE</h1>
+                        <h1>CREATE</h1>
+                        <h1>WITH YOU</h1>
+                        <h2 class="kor">당신과 함께하는</h2>
+                        <h2 class="kor">즐거운 트레이딩</h2>
+                        <button class="btn btn-varient kor" onclick="location.href='creator.html';">시작하기</button>
+                    </div>
                 </div>
-            </div>
-            <div class="about__content">
-                <div class="content__text">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam expedita officia blanditiis tempora nostrum incidunt vitae quaerat accusamus, dolorum amet sunt quod consequatur itaque laudantium quo iure odio saepe distinctio?
-                        <br/>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam aperiam blanditiis at quae architecto dolor.
-                        <br/>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat, ut.
-                    </p>
+                <div class="swiper-slide">
+                    <div class="swiper-text">
+                        <h1>TRADE</h1>
+                        <h1>CREATE</h1>
+                        <h1>WITH YOU</h1>
+                        <h2 class="kor">당신과 함께하는</h2>
+                        <h2 class="kor">즐거운 트레이딩</h2>
+                        <button class="btn btn-varient kor" onclick="location.href='creator.html';">시작하기</button>
+                    </div>
                 </div>
-                <div class="image">
-                    <img src="../image/podcast-5255557_1920.jpg">
                 </div>
             </div>
         </div>
@@ -297,6 +289,22 @@
 
     <!-- =========== JAVASCRIPT ========== -->
     <script src="../javascript/base.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          spaceBetween: 30,
+          centeredSlides: true,
+          autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+          },
+          navigation: {
+            nextEl: ".left-button",
+            prevEl: ".right-button",
+          },
+        });
+      </script>
 
 </body>
 </html>
